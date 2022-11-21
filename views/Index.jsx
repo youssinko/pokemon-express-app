@@ -12,6 +12,9 @@ class Index extends React.Component {
                 <h1>
                     'See All The Pokemon!'
                 </h1>
+                <nav>
+                    <a href="/pokemon/new">Create Your Favorite Pokemon</a>
+                </nav>
                 <ul>
                     {pokemon.map((pokemon, i) => {
                          const capital = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
@@ -19,7 +22,7 @@ class Index extends React.Component {
                        
                                 < li key = { i } >
 
-                                    <a href={`/pokemon/${i}`}>
+                                    <a href={`/pokemon/${pokemon._id}`}>
                                         {capital}
                                     </a>
 
