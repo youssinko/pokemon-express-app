@@ -12,7 +12,7 @@ class New extends React.Component {
                 <form action="/pokemon" method="POST">
                     Name of Your favorite pokemon = <input type="text" name='name' />
                     <br />
-                    Image : <input type="text" img='img' />
+                    Image : <input type="text" name='img' />
                     <br />
                     <input type="submit" value='Create Pokemon' />
     </form>

@@ -7,7 +7,7 @@ const myStyle = {
 class Show extends React.Component {
     render() {
         const {name , img} = this.props.pokemon
-        //const capital = name.charAt(0).toUpperCase() + name.slice(1)
+        const capital = name.charAt(0).toUpperCase() + name.slice(1)
         return (
             
             <body style={myStyle}>
@@ -15,8 +15,8 @@ class Show extends React.Component {
                 "Gotta Catch 'Em All"'
                 </h1>
                 <h2>
-                    {name} <br></br>
-                    <img src={`${this.props.img}.jpg`}></img>
+                    {capital} <br></br>
+                    <img src={`${img}.jpg`}></img>
                     <br></br>
                     <a href={`/pokemon`}>Back</a>
                     
